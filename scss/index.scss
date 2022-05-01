@@ -1,0 +1,34 @@
+@import './variables.scss';
+
+html {
+    font-size: 62.5%;
+    font-family: $ff-epilogue;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import './utilities.scss';
+@import './button.scss';
+@import './header.scss';
+@import './list.scss';
+@import './main.scss';
+@import './dialog.scss';
+
+.footer {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 120px;
+    a {
+        color: $almost-black;
+        font-size: 1.3rem;
+        text-decoration: none;
+
+        &:hover {
+            color: #999;
+            transition: all .5s;
+        }
+    }
+}

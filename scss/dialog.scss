@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+.modal {
+    right: 0;
+    left: initial;
+    min-height: 100vh;
+    padding: 2.4rem 2rem;
+    width: 70%;
+}
+
+.modal::backdrop {
+    background-color: $almost-black;
+    opacity: .75;
+}
+
+.modal .close-container {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal .btn-arrow {
+    + .list {
+        max-height: 0;
+        overflow: hidden;
+        margin-left: 2rem;
+        transition: max-height .5s ease-in;
+    }
+
+    &.btn-arrow-active {
+        + .list {
+            max-height: 100vh;
+        }
+    }
+}
+
+.modal .nav-buttons {
+    flex-direction: column;
+}

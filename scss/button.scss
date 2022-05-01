@@ -1,0 +1,80 @@
+@import './variables.scss';
+
+.btn {
+    font-size: 1.6rem;
+    outline: none;
+    font-style: normal;
+    border: none;
+    padding: 0rem .5rem;
+    color: $almost-black;
+    font-weight: 500;
+    background: none;
+    cursor: pointer;
+    border-radius: 2.5rem;
+}
+
+a.btn {
+    text-decoration: none;
+    font-weight: normal;
+    color: $medium-gray;
+}
+
+a.btn:hover {
+    color: $almost-black;
+}
+
+.btn-nav {
+    color: $medium-gray;
+}
+
+.btn-arrow {
+    position: relative;
+}
+
+.btn-arrow:hover, .btn-arrow:active, .btn-nav:hover, .btn-nav:active {
+    color: $almost-black;
+}
+
+.btn-arrow::after {
+    content: '';
+    width: 15px;
+    height: 20px;
+    background-image: url('./../images/icon-arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    right: -20px;
+    transition: background-image .5s ease-in;
+}
+
+.btn-arrow-active.btn-arrow::after {
+    background-image: url('./../images/icon-arrow-up.svg');
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-outline {
+    border: 3px solid $almost-black;
+}
+
+.btn-lg {
+    padding: 1.2rem 1.5rem;
+    font-size: 1.8rem;
+}
+
+.btn-black {
+    background-color: $almost-black;
+    color: $white;
+    transition: background-color .3s, color .2s;
+}
+
+.btn-black:hover {
+    background-color: $white;
+    color: $almost-black;
+    border: 1px solid $almost-black;
+}

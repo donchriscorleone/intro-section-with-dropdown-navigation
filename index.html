@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <script src="./js/index.js" defer></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav flex">
+      <div class="nav-brand-container">
+        <img src="./images/logo.svg" alt="A Brand Logo">
+      </div>
+      <ul class="list list-inline">
+        <li class="list__item list__item-container">
+          <button class="btn btn-nav btn-arrow">Features</button>
+          <ul class="list list-menu">
+            <li class="list__item">
+              <img src="./images/icon-todo.svg" alt="Calendar">
+              <a href="#" class="btn btn-icon btn-icon-calendar">Todo List</a>
+            </li>
+            <li class="list__item">
+              <img src="./images/icon-calendar.svg" alt="Calendar">
+              <a href="#" class="btn btn-icon btn-icon-calendar">Calendar</a>
+            </li>
+            <li class="list__item">
+              <img src="./images/icon-reminders.svg" alt="Calendar">
+              <a href="#" class="btn btn-icon btn-icon-calendar">Reminders</a>
+            </li>
+            <li class="list__item">
+              <img src="./images/icon-planning.svg" alt="Calendar">
+              <a href="#" class="btn btn-icon btn-icon-calendar">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list__item list__item-container">
+          <button class="btn btn-nav btn-arrow">Company</button>
+          <ul class="list list-menu">
+            <li class="list__item">
+              <a href="#" class="btn btn-icon btn-icon-calendar">History</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="btn btn-icon btn-icon-calendar">Our Team</a>
+            </li>
+            <li class="list__item">
+              <a href="#" class="btn btn-icon btn-icon-calendar">Blog</a>
+            </li>
+          </ul>
+        </li>
+        <li class="list__item">
+          <button class="btn btn-nav">Careers</button>
+        </li>
+        <li class="list__item">
+          <button class="btn btn-nav">About</button>
+        </li>
+      </ul>
+      <div class="nav-buttons flex">
+        <button class="btn btn-burger">
+          <img src="./images/icon-menu.svg" alt="Menu">
+        </button>
+        <button class="btn btn-block btn-lg">Login</button>
+        <button class="btn btn-block btn-outline btn-lg">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main grid">
+    <div class="hero"></div>
+    <section class="section">
+     <div class="section-content">
+        <h1 class="section-header">Make remote work</h1>
+        <p class="section-text">
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn btn-lg btn-black">Learn more</button>
+      </div>
+      <div class="clients flex">
+        <div class="client-container">
+          <img src="./images/client-databiz.svg" alt="Databiz">
+        </div>
+        <div class="client-container">
+          <img src="./images/client-audiophile.svg" alt="Databiz">
+        </div>
+        <div class="client-container">
+          <img src="./images/client-meet.svg" alt="Databiz">
+        </div>
+        <div class="client-container">
+          <img src="./images/client-maker.svg" alt="Databiz">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="https://www.instagram.com/christopheriilajom" target="_blank">Coded by Christopher II</a>.
+  </footer>
+  
+  <dialog class="modal" id="modal">
+    <div class="close-container">
+      <button class="btn btn-close">
+        <img src="./images/icon-close-menu.svg" alt="Menu">
+      </button>
+    </div>
+    <ul class="list list-dialog">
+      <li class="list__item list__item-container">
+        <button class="btn btn-nav btn-arrow">Features</button>
+        <ul class="list list-menu">
+          <li class="list__item">
+            <img src="./images/icon-todo.svg" alt="Calendar">
+            <a href="#" class="btn btn-icon btn-icon-calendar">Todo List</a>
+          </li>
+          <li class="list__item">
+            <img src="./images/icon-calendar.svg" alt="Calendar">
+            <a href="#" class="btn btn-icon btn-icon-calendar">Calendar</a>
+          </li>
+          <li class="list__item">
+            <img src="./images/icon-reminders.svg" alt="Calendar">
+            <a href="#" class="btn btn-icon btn-icon-calendar">Reminders</a>
+          </li>
+          <li class="list__item">
+            <img src="./images/icon-planning.svg" alt="Calendar">
+            <a href="#" class="btn btn-icon btn-icon-calendar">Planning</a>
+          </li>
+        </ul>
+      </li>
+      <li class="list__item list__item-container">
+        <button class="btn btn-nav btn-arrow">Company</button>
+        <ul class="list list-menu">
+          <li class="list__item">
+            <a href="#" class="btn btn-icon btn-icon-calendar">History</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="btn btn-icon btn-icon-calendar">Our Team</a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="btn btn-icon btn-icon-calendar">Blog</a>
+          </li>
+        </ul>
+      </li>
+      <li class="list__item">
+        <button class="btn btn-nav">Careers</button>
+      </li>
+      <li class="list__item">
+        <button class="btn btn-nav">About</button>
+      </li>
+      <div class="nav-buttons flex">
+        <button class="btn btn-block btn-lg">Login</button>
+        <button class="btn btn-block btn-outline btn-lg">Register</button>
+      </div>
+    </ul>
+  </dialog>
+
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->  
+  <!-- <div class="attribution">
+  </div> -->
+</body>
+</html>
